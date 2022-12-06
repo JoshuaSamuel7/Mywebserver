@@ -1,6 +1,6 @@
-from http.server import HTTPServer,BaseHTTPRequestHandler
+from http.server import HTTPServer, BaseHTTPRequestHandler
 
-content='''
+content="""
 <!doctype html>
 <html>
 <head>
@@ -14,16 +14,15 @@ content='''
 
 
 
-'''
-
+"""
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request recieved...")
         self.send_response(200)
-        self.end()
+        self.end_headers()
         self.wfile.write(content.encode())
 
 print("This is my Webserver")
-server_address=('',80)
-https=HTTPSever(server_address,Myserver)
-http.serve_forever()
+server_address=('', 80)
+httpd=HTTPServer(server_address,MyServer)
+httpd.serve_forever()
