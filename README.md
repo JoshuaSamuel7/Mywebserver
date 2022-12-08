@@ -54,8 +54,8 @@ httpd.serve_forever()
 ```
 ## OUTPUT:
 ### Client side output:
-! [GitHub Logo](/images/client.png)
+! [Client side output](./images/client.png)
 ### Server side output:
-! [GitHub Logo](/images/server.png)
+! [Server side output](./images/server.png)
 ## RESULT:
-The above code was executed successfully. 
+The the web server is developed to display about the top five programming languages.
