@@ -54,10 +54,8 @@ httpd.serve_forever()
 ```
 ## OUTPUT:
 ### Client side output:
-
-
+! [GitHub Logo](/images/client.png)
 ### Server side output:
-
-
+! [GitHub Logo](/images/server.png)
 ## RESULT:
 The above code was executed successfully. 
